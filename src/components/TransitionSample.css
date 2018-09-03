@@ -1,0 +1,26 @@
+.transition-content__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transition-content__content {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.transition-content__content-text {
+    border: 2px black solid;
+    font-size: 24px;
+    width: 300px;
+}
+
+.transition-content__content-text:hover {
+    border: 5px red dotted;
+    font-size: 50px;
+    padding: 20px;
+    transform: translateX(50px) rotate(45deg);
+    display: inline-flex;
+}
