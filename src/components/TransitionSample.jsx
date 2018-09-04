@@ -15,11 +15,17 @@ const SampleContent = (props) => {
                 Notes: 
                 <ul>
                     <li>
+                        You set the transition properties on the parent element.
+                    </li>
+                    <li>
                         You can only transition things that have intermediate values.
                     </li>
                     <li>
                         You can't transition things that don't have intermediate values, like display or something with width: auto.
                         (Well you can, but the effects are unpredictable)
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/eteague/pen/zJzBqj" target="_blank">Putting it all together</a>
                     </li>
                 </ul>
             </div>
