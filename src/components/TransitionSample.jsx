@@ -7,14 +7,22 @@ const SampleContent = (props) => {
     return (
         <div className="transition-content__container">
             <h1>{props.title}</h1>
-            <p>Transition Delay: {descriptions.transitionDelay}</p>
-            <p>Transition Duration: {descriptions.transitionDuration}</p>
-            <p>Transition Property: {descriptions.transitionProperty}</p>
-            <p>Transition Timing Function: {descriptions.transitionTimingFunction}</p>
-            <p>Note: You can only transition things that have intermediate values.
-                E.g. You can transition color and size, but you can't transition display.
-                (Well, you can, but I've been told that the results can be unpredictable)
-            </p>
+            <p><span className='property'>Transition Delay: </span>{descriptions.transitionDelay}</p>
+            <p><span className='property'>Transition Duration: </span>{descriptions.transitionDuration}</p>
+            <p><span className='property'>Transition Property: </span>{descriptions.transitionProperty}</p>
+            <p><span className='property'>Transition Timing Function: </span>{descriptions.transitionTimingFunction}</p>
+            <div style={{'textAlign': 'left'}}>
+                Notes: 
+                <ul>
+                    <li>
+                        You can only transition things that have intermediate values.
+                    </li>
+                    <li>
+                        You can't transition things that don't have intermediate values, like display or something with width: auto.
+                        (Well you can, but the effects are unpredictable)
+                    </li>
+                </ul>
+            </div>
             <div className="transition-content__content">
                 <div className="transition-content__content-text" style={props.style}>
                 {"Sample Text"}

@@ -23,6 +23,11 @@ class Transform extends Component {
   render() {
     return (
       <div className="App">
+        <code className="code">
+            {`.my-class {
+                transform: translateX(45px) scaleX(1.2) rotate(45deg);
+            }`}
+        </code>
         <SampleContent
           title={'Translate'}
           description={descriptions['translate']}

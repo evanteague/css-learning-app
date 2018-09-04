@@ -24,3 +24,7 @@
     transform: translateX(50px) rotate(45deg);
     display: inline-flex;
 }
+
+.property {
+    font-weight: bold;
+}

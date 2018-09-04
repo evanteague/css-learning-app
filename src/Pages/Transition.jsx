@@ -28,6 +28,14 @@ class Transition extends Component {
   render() {
     return (
         <div>
+            <code className="code">
+                {`.my-class {
+                    transition-delay: 2s;
+                    transition-delay: 2s;
+                    transition-property: padding, margin;
+                    transition-timing-function: linear;
+                }`}
+            </code>
             <TransitionSample
                 transitionDelay={this.state.transitionDelay}
                 transitionDuration={this.state.transitionDuration}
